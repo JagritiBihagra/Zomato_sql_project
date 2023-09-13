@@ -117,7 +117,7 @@ select userid,count(created_date) order_purchased , sum(price) total_amount_spen
 inner join goldusers_signup b  on a.userid=b.userid and created_date<= gold_signup_date)
 c inner join product d on c.product_id=d.product_id ) e group by userid
 
---Query 9: If buying each product generates point for each 5rs=2 zomato point and each product has different purchasing points
+--Query 9: If buying each product generates a point for each 5rs=2 zomato points and each product has different purchasing points
 for eg for p1 5rs=1 zomato point, for p2 10rs=5 zomato point and p3 5rs=1 zomato point
 calculate points collected by each customer by each customer and for which product most points have been given till now.
 
